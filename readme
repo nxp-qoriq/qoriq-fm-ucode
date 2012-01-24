@@ -1,8 +1,27 @@
-fsl_fman_ucode_P3041_106_7.bin is for P304x.
-fsl_fman_ucode_P4080_106_7.bin is for p40x0.
-fsl_fman_ucode_P5020_106_7.bin is for P50x0.
-fsl_fman_ucode_SC1023_160_10.bin p1023 rev 1.0.
-fsl_fman_ucode_P1023_160_13.bin p1023 rev 1.1.
-fsl_fman_ucode_P3_P4_P5_101_8.bin is still to be used on P204x.
+These are the microcode binaries for the Frame Manager hardware block in QorIQ
+products. Specific platforms require specific binaries, and those also have to
+further match specific software versions (Frame Manager Driver -- FMD).
+The mapping is given below:
+
+P1023 rev 1.0
+fsl_fman_ucode_SC1023_160_10.bin	FMD15 (NetCommSw GA4.4)
+
+P1023 rev 1.1
+fsl_fman_ucode_P1023_160_13.bin		FMD15 (NetCommSw GA4.4)
+
+P204x
+fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+
+P304x
+fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P3041_106_7.bin		FMD15 (NetCommSw GA4.4)
+
+P4080
+fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P4080_106_7.bin		FMD15 (NetCommSw GA4.4)
+
+P50x0
+fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P5020_106_7.bin		FMD15 (NetCommSw GA4.4)
 
 For specifics on how to use these binaries, please refer to the SDK user manual.
