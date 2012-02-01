@@ -10,7 +10,7 @@ P1023 rev 1.1
 fsl_fman_ucode_P1023_160_13.bin		FMD15 (NetCommSw GA4.4)
 
 P204x
-fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P2041_101_8.bin		FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 
 P304x
 fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
