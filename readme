@@ -20,6 +20,10 @@ P4080
 fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 fsl_fman_ucode_P4080_106_7.bin		FMD15 (NetCommSw GA4.4)
 
+P3060
+fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P4080_106_7.bin		FMD15 (NetCommSw GA4.4)
+
 P50x0
 fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 fsl_fman_ucode_P5020_106_7.bin		FMD15 (NetCommSw GA4.4)
