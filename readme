@@ -4,28 +4,43 @@ further match specific software versions (Frame Manager Driver -- FMD).
 The mapping is given below:
 
 P1023 rev 1.0
-fsl_fman_ucode_SC1023_160_10.bin	FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_SC1023_160_10.bin	FMD15, FMD15.1 (NetCommSw GA4.4)
 
 P1023 rev 1.1
-fsl_fman_ucode_P1023_160_13.bin		FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P1023_160_13.bin		FMD15, FMD15.1 (NetCommSw GA4.4)
 
 P204x
-fsl_fman_ucode_P2041_101_8.bin		FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P2041_101_8.bin    (*)	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 
 P304x
-fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P3_P4_P5_101_8.bin (*)	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 fsl_fman_ucode_P3041_106_7.bin		FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P3041_106_1_0.bin (**)	FMD15 (NetCommSw GA4.4)
 
 P4080
-fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+fsl_fman_ucode_P3_P4_P5_101_8.bin (*)	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 fsl_fman_ucode_P4080_106_7.bin		FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P4080_106_2_0.bin (**)	FMD15 (NetCommSw GA4.4)
 
 P3060
-fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
-fsl_fman_ucode_P4080_106_7.bin		FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P3_P4_P5_101_8.bin (*)	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 
-P50x0
-fsl_fman_ucode_P3_P4_P5_101_8.bin	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
+P5020
+fsl_fman_ucode_P3_P4_P5_101_8.bin (*)	FMD14, FMD15.1 (NetCommSw GA4.3, GA4.4)
 fsl_fman_ucode_P5020_106_7.bin		FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P5020_106_1_0.bin (**)	FMD15 (NetCommSw GA4.4)
+
+P5040
+fsl_fman_ucode_P5040_106_1_0.bin (**)	Unsupported.
 
 For specifics on how to use these binaries, please refer to the SDK user manual.
+
+NOTES:
+*)	Please note that FMD15 (i.e. without the ".1" patch!) removes support for
+	these specific ucode versions. For that to still work, one has either to
+	remain at FMD14, or upgrade to FMD15.1.
+
+**)	Starting with this specific ucode release, the ucode numbering scheme has
+	changed: while the major numbers are unchanged, there are now two minor
+	numbers instead of just one, and both the minors have been reset to what
+	they are now.
