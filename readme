@@ -11,23 +11,20 @@ fsl_fman_ucode_P1023_160_13.bin		FMD15, FMD15.1 (NetCommSw GA4.4)
 
 P204x
 fsl_fman_ucode_P2041_101_8.bin    (*)	FMD14	(NetCommSw GA4.3)
-					FMD15.1	(NetCommSw GA4.4)
+					FMD15, FMD15.1	(NetCommSw GA4.4)
 
 P304x
-fsl_fman_ucode_P3041_106_1_0.bin (**)	FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P3041_106_1_0.bin (**)	FMD15, FMD15.1 (NetCommSw GA4.4)
 
 P4080
-fsl_fman_ucode_P4080_106_2_0.bin (**)	FMD15 (NetCommSw GA4.4)
-
-P3060
-fsl_fman_ucode_P3_P4_P5_101_8.bin (*)	FMD14	(NetCommSw GA4.3),
-					FMD15.1	(NetCommSw GA4.4)
+fsl_fman_ucode_P4080_106_2_0.bin (**)	FMD15, FMD15.1 (NetCommSw GA4.4)
 
 P5020
-fsl_fman_ucode_P5020_106_1_0.bin (**)	FMD15 (NetCommSw GA4.4)
+fsl_fman_ucode_P5020_106_1_0.bin (**)	FMD15, FMD15.1 (NetCommSw GA4.4)
 
 P5040
-fsl_fman_ucode_P5040_106_1_0.bin (**)	Unsupported.
+fsl_fman_ucode_P5040_106_1_0.bin (**)	FMD 15.1 (platform integration
+					into the SDK in progress)
 
 For specifics on how to use these binaries, please refer to the SDK user manual.
 
