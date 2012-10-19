@@ -3,26 +3,23 @@ products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 The mapping is given below:
 
-P1023 rev 1.0
-fsl_fman_ucode_SC1023_160_10.bin (*)	FMD15, FMD15.1
-
 P1023 rev 1.1
-fsl_fman_ucode_P1023_160_13.bin  (**)	FMD15, FMD15.1, FMD17
+fsl_fman_ucode_P1023_160_13.bin  (**)	FMD15, FMD15.1, FMD16, FMD17.x
 
 P204x
-fsl_fman_ucode_P2041_106_1_4.bin (***)	FMD17
+fsl_fman_ucode_P2041_106_1_4.bin (***)	FMD17.x
 
 P304x
-fsl_fman_ucode_P3041_106_1_4.bin (***)	FMD17
+fsl_fman_ucode_P3041_106_1_4.bin (***)	FMD17.x
 
 P4080
-fsl_fman_ucode_P4080_106_2_4.bin (***)	FMD17
+fsl_fman_ucode_P4080_106_2_4.bin (***)	FMD17.x
 
 P5020
-fsl_fman_ucode_P5020_106_1_4.bin (***)	FMD17
+fsl_fman_ucode_P5020_106_1_4.bin (***)	FMD17.x
 
 P5040
-fsl_fman_ucode_P5040_106_1_4.bin (***)	FMD17
+fsl_fman_ucode_P5040_106_1_4.bin (***)	FMD17.x
 
 For specifics on how to use these binaries, please refer to the SDK user manual.
 
