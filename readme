@@ -4,28 +4,28 @@ further match specific software versions (Frame Manager Driver -- FMD).
 The mapping is given below:
 
 P1023 rev 1.1
-fsl_fman_ucode_P1023_160_15.bin  	FMD15, FMD15.1, FMD16, FMD17.x, FMD18.x
+fsl_fman_ucode_P1023_160_15.bin  	FMD15, FMD15.1, FMD16, FMD17.x, FMD18.1.1
 
 P204x
-fsl_fman_ucode_P2041_106_1_5.bin (*)	FMD18.x
+fsl_fman_ucode_P2041_106_1_6.bin (*)	FMD18.1.2
 
 P304x
-fsl_fman_ucode_P3041_106_1_5.bin (*)	FMD18.x
+fsl_fman_ucode_P3041_106_1_6.bin (*)	FMD18.1.2
 
 P4080
-fsl_fman_ucode_P4080_106_2_5.bin (*)	FMD18.x
+fsl_fman_ucode_P4080_106_2_6.bin (*)	FMD18.1.2
 
 P5020
-fsl_fman_ucode_P5020_106_1_5.bin (*)	FMD18.x
+fsl_fman_ucode_P5020_106_1_6.bin (*)	FMD18.1.2
 
 P5040
-fsl_fman_ucode_P5040_106_1_5.bin (*)	FMD18.x
+fsl_fman_ucode_P5040_106_1_6.bin (*)	FMD18.1.2
 
 B4860
-fsl_fman_ucode_B4860_106_3_5.bin (*)	FMD18.x
+fsl_fman_ucode_B4860_106_3_6.bin (*)	FMD18.1.2
 
 T4240
-fsl_fman_ucode_T4240_106_3_5.bin (*)	FMD18.x
+fsl_fman_ucode_T4240_106_4_6.bin (*)	FMD18.1.2
 
 For specifics on how to use these binaries, please refer to the SDK user manual.
 
