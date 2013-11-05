@@ -3,71 +3,29 @@ These are the microcode binaries for the Frame Manager hardware block in QorIQ
 products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
-PACC IRAM Package Alpha Release 106_x_10 (*) 
+PACC IRAM Package Alpha Release 106_x_11 and 106_x_10 (*) 
 
 This IRAM package includes the following main features: Coarse Classification (CC),
 Independent-Mode (IM), Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
 
+ fsl_fman_ucode_p2041_r1.0_106_1_11.bin
+ fsl_fman_ucode_p2041_r1.1_106_1_11.bin
+ fsl_fman_ucode_p2041_r2.0_106_1_11.bin
+ fsl_fman_ucode_p3041_r1.0_106_1_11.bin
+ fsl_fman_ucode_p3041_r1.1_106_1_11.bin
+ fsl_fman_ucode_p3041_r2.0_106_1_11.bin
+ fsl_fman_ucode_p4080_r2.0_106_2_11.bin
+ fsl_fman_ucode_p4080_r3.0_106_2_11.bin
+ fsl_fman_ucode_p5020_r1.0_106_1_11.bin
+ fsl_fman_ucode_p5020_r2.0_106_1_11.bin
+ fsl_fman_ucode_p5040_r1.0_106_1_11.bin
+ fsl_fman_ucode_p5040_r2.0_106_1_11.bin
+ fsl_fman_ucode_b4860_r1.0_106_3_10.bin
+ fsl_fman_ucode_b4860_r2.0_106_4_10.bin
+ fsl_fman_ucode_p1023_r1.1_160_0_18.bin
+ fsl_fman_ucode_t1040_r1.0_106_4_10.bin
+ fsl_fman_ucode_t2080_r1.0_106_4_10.bin
+ fsl_fman_ucode_t4240_r1.0_106_4_10.bin
+ fsl_fman_ucode_t4240_r2.0_106_4_10.bin
 
-P2041 rev 1.0 - fsl_fman_ucode_p2041_r1.0_106_1_10.bin FMD21.1
-P2041 rev 1.1 - fsl_fman_ucode_p2041_r1.1_106_1_10.bin FMD21.1
-P2041 rev 2.0 - fsl_fman_ucode_p2041_r2.0_106_1_10.bin FMD21.1
-P3041 rev 1.0 - fsl_fman_ucode_p3041_r1.0_106_1_10.bin FMD21.1
-P3041 rev 1.1 - fsl_fman_ucode_p3041_r1.1_106_1_10.bin FMD21.1
-P3041 rev 2.0 - fsl_fman_ucode_p3041_r2.0_106_1_10.bin FMD21.1
-P4080 rev 2.0 - fsl_fman_ucode_p4080_r2.0_106_2_10.bin FMD21.1
-P4080 rev 3.0 - fsl_fman_ucode_p4080_r3.0_106_2_10.bin FMD21.1
-P5020 rev 1.0 - fsl_fman_ucode_p5020_r1.0_106_1_10.bin FMD21.1
-P5020 rev 2.0 - fsl_fman_ucode_p5020_r2.0_106_1_10.bin FMD21.1
-P5040 rev 1.0 - fsl_fman_ucode_p5040_r1.0_106_1_10.bin FMD21.1
-P5040 rev 2.0 - fsl_fman_ucode_p5040_r2.0_106_1_10.bin FMD21.1
-T2080 rev 1.0 - fsl_fman_ucode_t2080_r1.0_106_4_10.bin FMD21.1
-T4240 rev 1.0 - fsl_fman_ucode_t4240_r1.0_106_4_10.bin FMD21.1
-T4240 rev 2.0 - fsl_fman_ucode_t4240_r2.0_106_4_10.bin FMD21.1
-B4860 rev 1.0 - fsl_fman_ucode_b4860_r1.0_106_3_10.bin FMD21.1
-B4860 rev 2.0 - fsl_fman_ucode_b4860_r2.0_106_4_10.bin FMD21.1
-P1023 rev 1.1 - fsl_fman_ucode_P1023_r1.1_160_0_18.bin FMD21.1
-
-The mapping of previous binaries to Frame Manager Driver is given below:
-
-P2041 rev 1.0 - fsl_fman_ucode_p2041_r1.0_106_1_9.bin  FMD21.1
-P2041 rev 1.1 - fsl_fman_ucode_p2041_r1.1_106_1_9.bin  FMD21.1
-P2041 rev 2.0 - fsl_fman_ucode_p2041_r2.0_106_1_9.bin  FMD21.1
-P3041 rev 1.0 - fsl_fman_ucode_p3041_r1.0_106_1_9.bin  FMD21.1
-P3041 rev 1.1 - fsl_fman_ucode_p3041_r1.1_106_1_9.bin  FMD21.1
-P3041 rev 2.0 - fsl_fman_ucode_p3041_r2.0_106_1_9.bin  FMD21.1
-P4080 rev 2.0 - fsl_fman_ucode_p4080_r2.0_106_2_9.bin  FMD21.1
-P4080 rev 3.0 - fsl_fman_ucode_p4080_r3.0_106_2_9.bin  FMD21.1
-P5020 rev 1.0 - fsl_fman_ucode_p5020_r1.0_106_1_9.bin  FMD21.1
-P5020 rev 2.0 - fsl_fman_ucode_p5020_r2.0_106_1_9.bin  FMD21.1
-P5040 rev 1.0 - fsl_fman_ucode_p5040_r1.0_106_1_9.bin  FMD21.1
-P5040 rev 2.0 - fsl_fman_ucode_p5040_r2.0_106_1_9.bin  FMD21.1
-B4860 rev 1.0 - fsl_fman_ucode_b4860_r1.0_106_3_9.bin  FMD21.1
-T4240 rev 1.0 - fsl_fman_ucode_t4240_r1.0_106_4_9.bin  FMD21.1
-P1023 rev 1.1 - fsl_fman_ucode_P1023_r1.1_160_0_18.bin FMD21.1
-
-
-P2041 rev 1.0 - fsl_fman_ucode_p2041_r1.0_106_1_8.bin  FMD20/FMD21
-P2041 rev 1.1 - fsl_fman_ucode_p2041_r1.1_106_1_8.bin  FMD20/FMD21
-P2041 rev 2.0 - fsl_fman_ucode_p2041_r2.0_106_1_8.bin  FMD20/FMD21
-P3041 rev 1.0 - fsl_fman_ucode_p3041_r1.0_106_1_8.bin  FMD20/FMD21
-P3041 rev 1.1 - fsl_fman_ucode_p3041_r1.1_106_1_8.bin  FMD20/FMD21
-P3041 rev 2.0 - fsl_fman_ucode_p3041_r2.0_106_1_8.bin  FMD20/FMD21
-P4080 rev 2.0 - fsl_fman_ucode_p4080_r2.0_106_2_8.bin  FMD20/FMD21
-P4080 rev 3.0 - fsl_fman_ucode_p4080_r3.0_106_2_8.bin  FMD20/FMD21
-P5020 rev 1.0 - fsl_fman_ucode_p5020_r1.0_106_1_8.bin  FMD20/FMD21
-P5020 rev 2.0 - fsl_fman_ucode_p5020_r2.0_106_1_8.bin  FMD20/FMD21
-P5040 rev 1.0 - fsl_fman_ucode_p5040_r1.0_106_1_8.bin  FMD20/FMD21
-P5040 rev 2.0 - fsl_fman_ucode_p5040_r2.0_106_1_8.bin  FMD20/FMD21
-B4860 rev 1.0 - fsl_fman_ucode_b4860_r1.0_106_3_8.bin  FMD20/FMD21
-T4240 rev 1.0 - fsl_fman_ucode_t4240_r1.0_106_4_8.bin  FMD20/FMD21
-P1023 rev 1.1 - fsl_fman_ucode_P1023_160_15.bin FMD20/FMD21
-
-
-For specifics on how to use these binaries, please refer to the SDK user manual.
-
-NOTES:
-	(*)	Each and every ucode release is usually tested against its corresponding
-                FMD. Mixing inappropriate ucode releases and FMD versions may result
-                malfunctioning behavior of the FMan Driver.
