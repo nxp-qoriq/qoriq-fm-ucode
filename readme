@@ -3,29 +3,52 @@ These are the microcode binaries for the Frame Manager hardware block in QorIQ
 products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
-PACC IRAM Package Alpha Release 106_x_11 and 106_x_10 (*) 
+PACC IRAM Package Alpha Release 106_x_14 (*) 
 
 This IRAM package includes the following main features: Coarse Classification (CC),
 Independent-Mode (IM), Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
 
- fsl_fman_ucode_p2041_r1.0_106_1_11.bin
- fsl_fman_ucode_p2041_r1.1_106_1_11.bin
- fsl_fman_ucode_p2041_r2.0_106_1_11.bin
- fsl_fman_ucode_p3041_r1.0_106_1_11.bin
- fsl_fman_ucode_p3041_r1.1_106_1_11.bin
- fsl_fman_ucode_p3041_r2.0_106_1_11.bin
- fsl_fman_ucode_p4080_r2.0_106_2_11.bin
- fsl_fman_ucode_p4080_r3.0_106_2_11.bin
- fsl_fman_ucode_p5020_r1.0_106_1_11.bin
- fsl_fman_ucode_p5020_r2.0_106_1_11.bin
- fsl_fman_ucode_p5040_r1.0_106_1_11.bin
- fsl_fman_ucode_p5040_r2.0_106_1_11.bin
- fsl_fman_ucode_b4860_r1.0_106_3_10.bin
- fsl_fman_ucode_b4860_r2.0_106_4_10.bin
- fsl_fman_ucode_p1023_r1.1_160_0_18.bin
- fsl_fman_ucode_t1040_r1.0_106_4_10.bin
- fsl_fman_ucode_t2080_r1.0_106_4_10.bin
- fsl_fman_ucode_t4240_r1.0_106_4_10.bin
- fsl_fman_ucode_t4240_r2.0_106_4_10.bin
+fsl_fman_ucode_p4080_r2.0_106_2_14.bin
+fsl_fman_ucode_p4080_r3.0_106_2_14.bin
+fsl_fman_ucode_b4860_r1.0_106_3_14.bin
+fsl_fman_ucode_b4860_r2.0_106_4_14.bin
+fsl_fman_ucode_p5020_r1.0_106_1_14.bin
+fsl_fman_ucode_p5020_r2.0_106_1_14.bin
+fsl_fman_ucode_p1023_r1.1_160_0_18.bin
+fsl_fman_ucode_p5040_r1.0_106_1_14.bin
+fsl_fman_ucode_p5040_r2.0_106_1_14.bin
+fsl_fman_ucode_p2041_r1.0_106_1_14.bin
+fsl_fman_ucode_p2041_r1.1_106_1_14.bin
+fsl_fman_ucode_p2041_r2.0_106_1_14.bin
+fsl_fman_ucode_t1040_r1.0_106_4_14.bin
+fsl_fman_ucode_t2080_r1.0_106_4_14.bin
+fsl_fman_ucode_p3041_r1.0_106_1_14.bin
+fsl_fman_ucode_p3041_r1.1_106_1_14.bin
+fsl_fman_ucode_p3041_r2.0_106_1_14.bin
+fsl_fman_ucode_t4240_r1.0_106_4_14.bin
+fsl_fman_ucode_t4240_r2.0_106_4_14.bin
+
+    fm-ucode: new rev 106.x.14
+    
+    rev 106.x.14:
+    IP short frames with L2 padding should not be encrypted with the padding.
+    Added in IPsec Manipulation Table Descriptor before encryption
+    mechanism to remove the padding.
+    
+    rev 106.x.13:
+    1.) FMan V2 and FMan V3:In case frame came from RMan and it is sRIO type 9 then
+    the FD is of SG format and most likely it is with only one entry; in order to
+    increase performance/latency (especially if frame is directed to the SEC)
+    the firmware converts this one entry SG format frame into single buffer format.
+    2.) FMan V2 only: In case frame came from SEC decryption on FMan V2 device
+    the firmware removes the ESP trailer and updates the FD[Length] accordingly.
+    In addition firmware adjusts the SEC S/G output frame to be compatible to
+    FMan S/G format (valid only for FMan V2 devices after SEC decryption).
+    For FMan V3 devices SEC HW supports ESP trailer removal and enabling
+    storage profile also solves the FMan S/G compatible issues
+    
+    rev 106.x.12:
+    Relevant only to FMan V2: Fixed IPR16- IPR malformed behaviour when there is
+    discard on successfully reassembled frame.
 
