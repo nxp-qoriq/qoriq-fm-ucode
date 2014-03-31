@@ -4,6 +4,7 @@ products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
 PACC IRAM Package Alpha Release 106_x_14 (*) 
+DSAR IRAM Package Alpha Release 107_4_0
 
 This IRAM package includes the following main features: Coarse Classification (CC),
 Independent-Mode (IM), Host-Commands (HC), IPv4/6 Fragmentation (IPF),
@@ -28,10 +29,15 @@ fsl_fman_ucode_p3041_r1.1_106_1_14.bin
 fsl_fman_ucode_p3041_r2.0_106_1_14.bin
 fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
+fsl_fman_ucode_t1040_r1.0_107_4_0.bin
 
-    fm-ucode: new rev 106.x.14
-    
+    rev 107.x.0:
+
+    Deep Sleep Auto-Response: ARP, ICMP, ND and SNMP. Also provide AR Pass filter.
+
+
     rev 106.x.14:
+    
     IP short frames with L2 padding should not be encrypted with the padding.
     Added in IPsec Manipulation Table Descriptor before encryption
     mechanism to remove the padding.
