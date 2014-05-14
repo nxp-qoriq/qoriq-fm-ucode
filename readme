@@ -4,7 +4,7 @@ products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
 PACC IRAM Package Alpha Release 106_x_14 (*) 
-DSAR IRAM Package Alpha Release 107_4_0
+DSAR IRAM Package Alpha Release 107_4_1
 
 This IRAM package includes the following main features: Coarse Classification (CC),
 Independent-Mode (IM), Host-Commands (HC), IPv4/6 Fragmentation (IPF),
@@ -29,11 +29,21 @@ fsl_fman_ucode_p3041_r1.1_106_1_14.bin
 fsl_fman_ucode_p3041_r2.0_106_1_14.bin
 fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
-fsl_fman_ucode_t1040_r1.0_107_4_0.bin
+fsl_fman_ucode_t1040_r1.0_107_4_1.bin
 
-    rev 107.x.0:
+    rev 107.4.1:
 
     Deep Sleep Auto-Response: ARP, ICMP, ND and SNMP. Also provide AR Pass filter.
+
+    change in 107.4.1 release is the fix of following 5 AR SNMP bugs:
+    DSAR1:SNMP: Intermittent incorrect UDP checksum on response packet.
+    DSAR2:SNMP: The beginning of the frame is corrupted for the NOSUCHNAME response
+    DSAR3:SNMP: The UDP checksum of the NOSUCHNAME response is not correct if 
+                response frame size exceed 256 bytes.
+    DSAR4:SNMP: The Active Mode Hardware Parser NIA is not invoked for the case of 
+                set-request message is received.
+    DSAR5:VLAN tagged frames are not matched correctly in the IP address tables. 
+                Frames with VLAN tags are considered mismatch in the IP/VLAN matching.
 
 
     rev 106.x.14:
