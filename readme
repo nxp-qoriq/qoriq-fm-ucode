@@ -30,6 +30,32 @@ fsl_fman_ucode_p3041_r2.0_106_1_14.bin
 fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
 fsl_fman_ucode_t1040_r1.0_107_4_1.bin
+fsl_fman_ucode_t1040_r1.0_107_4_2_candidate1.bin
+
+
+   rev 107.4.2.candidate1
+
+Features: The following IP Acceleration features are not 
+supported in this package:
+- IP fragmentation,
+- IP reassembly,
+- Header Manipulation,
+- Frame Replication.
+Please note that CC STD (statistics table descriptor) is supported.
+
+Bug Fixes/CCB
+This release is a result of integration with Linux environment and 
+full power down management system
+testing. The following are the work-arounds implemented:
+- Set FMFP_BRKC[SLP] bit just before event of wake-up.
+- Eliminate internal syncbefore transmitting AR packets.
+
+Known Issues
+The following FMD updates to the deep sleep transition steps are:
+- The Auto-Response TX IM port is enabled during deep sleep and 
+  its FMBM_TFDNE set to NIA 0x005000C0 (BMI Release).
+- The FMFP_BRKC[SLP] is not set by the FMD instead it is set in firmware.
+
 
     rev 107.4.1:
 
