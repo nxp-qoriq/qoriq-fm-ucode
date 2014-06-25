@@ -4,7 +4,7 @@ products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
 PACC IRAM Package Alpha Release 106_x_14 (*) 
-DSAR IRAM Package Alpha Release 107_4_1
+DSAR IRAM Package Alpha Release 107_4_2
 
 This IRAM package includes the following main features: Coarse Classification (CC),
 Independent-Mode (IM), Host-Commands (HC), IPv4/6 Fragmentation (IPF),
@@ -30,46 +30,26 @@ fsl_fman_ucode_p3041_r2.0_106_1_14.bin
 fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
 fsl_fman_ucode_t1040_r1.0_107_4_1.bin
-fsl_fman_ucode_t1040_r1.0_107_4_2_candidate1.bin
+fsl_fman_ucode_t1040_r1.0_107_4_2.bin
 
 
-   rev 107.4.2.candidate1
+   rev 107.4.2
 
-Features: The following IP Acceleration features are not 
-supported in this package:
-- IP fragmentation,
-- IP reassembly,
-- Header Manipulation,
-- Frame Replication.
-Please note that CC STD (statistics table descriptor) is supported.
+The following 4 AR SNMP bugs were fixed in this release (107.4.1 to 107.4.2):
 
-Bug Fixes/CCB
-This release is a result of integration with Linux environment and 
-full power down management system
-testing. The following are the work-arounds implemented:
-- Set FMFP_BRKC[SLP] bit just before event of wake-up.
-- Eliminate internal syncbefore transmitting AR packets.
+DSAR6 SNMP: Varbind with length field span between 256 bytes blocks cause varbind
+interpreted incorrectly.
 
-Known Issues
-The following FMD updates to the deep sleep transition steps are:
-- The Auto-Response TX IM port is enabled during deep sleep and 
-  its FMBM_TFDNE set to NIA 0x005000C0 (BMI Release).
-- The FMFP_BRKC[SLP] is not set by the FMD instead it is set in firmware.
+DSAR7 SNMP: SNMP: If the community string is larger than the remaining byte length
+next to the community string, community mismatch may occur even the string matches.
+
+DSAR8 SNMP: Community mismatch may occur if the community string is located across
+256 bytes boundary of the frame.
+
+DSAR9 SNMP: Incorrect interpretation on length field if the length is 2-bytes
+(i.e. 256~65535) and located across 256 bytes boundary of the SNMP frame.
 
 
-    rev 107.4.1:
-
-    Deep Sleep Auto-Response: ARP, ICMP, ND and SNMP. Also provide AR Pass filter.
-
-    change in 107.4.1 release is the fix of following 5 AR SNMP bugs:
-    DSAR1:SNMP: Intermittent incorrect UDP checksum on response packet.
-    DSAR2:SNMP: The beginning of the frame is corrupted for the NOSUCHNAME response
-    DSAR3:SNMP: The UDP checksum of the NOSUCHNAME response is not correct if 
-                response frame size exceed 256 bytes.
-    DSAR4:SNMP: The Active Mode Hardware Parser NIA is not invoked for the case of 
-                set-request message is received.
-    DSAR5:VLAN tagged frames are not matched correctly in the IP address tables. 
-                Frames with VLAN tags are considered mismatch in the IP/VLAN matching.
 
 
     rev 106.x.14:
