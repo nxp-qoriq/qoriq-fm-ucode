@@ -31,7 +31,13 @@ fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
 fsl_fman_ucode_t1040_r1.0_107_4_1.bin
 fsl_fman_ucode_t1040_r1.0_107_4_2.bin
+fsl_fman_ucode_t1024_r1.0_106_4_14.bin
+fsl_fman_ucode_t1024_r1.0_107_4_2.bin
+fsl_fman_ucode_t1024_r1.0_108_4_2.bin
 
+
+   rev 108.4.2
+This package is IPACC + Next Generation CAPWAP
 
    rev 107.4.2
 
