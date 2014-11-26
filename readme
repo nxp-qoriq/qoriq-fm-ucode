@@ -4,11 +4,14 @@ products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
 PACC IRAM Package Alpha Release 106_x_14 (*) 
-DSAR IRAM Package Alpha Release 107_4_2
+DSAR IRAM Package Alpha Release 107_x_2
+IPACC + Next Generation CAPWAP  108_x_2
 
-This IRAM package includes the following main features: Coarse Classification (CC),
-Independent-Mode (IM), Host-Commands (HC), IPv4/6 Fragmentation (IPF),
+(*) This IRAM package includes the following main features:
+Coarse Classification (CC), Independent-Mode (IM),
+Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
+
 
 fsl_fman_ucode_p4080_r2.0_106_2_14.bin
 fsl_fman_ucode_p4080_r3.0_106_2_14.bin
@@ -29,7 +32,6 @@ fsl_fman_ucode_p3041_r1.1_106_1_14.bin
 fsl_fman_ucode_p3041_r2.0_106_1_14.bin
 fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
-fsl_fman_ucode_t1040_r1.0_107_4_1.bin
 fsl_fman_ucode_t1040_r1.0_107_4_2.bin
 fsl_fman_ucode_t1024_r1.0_106_4_14.bin
 fsl_fman_ucode_t1024_r1.0_107_4_2.bin
