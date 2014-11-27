@@ -3,12 +3,25 @@ These are the microcode binaries for the Frame Manager hardware block in QorIQ
 products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
-PACC IRAM Package Alpha Release 106_x_14 (*) 
+IPACC IRAM Package Alpha Release 106_x_14 
 DSAR IRAM Package Alpha Release 107_x_2
 IPACC + Next Generation CAPWAP  108_x_2
 
-(*) This IRAM package includes the following main features:
+_106_
+This IRAM package includes the following main features:
 Coarse Classification (CC), Independent-Mode (IM),
+Host-Commands (HC), IPv4/6 Fragmentation (IPF),
+IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
+
+_107_
+This IRAM package includes the following main features: 
+Custom Classification (CC), Independent-Mode (IM), 
+Host-Commands (HC) and Deep Sleep Auto Response (DSAR). 
+For DSAR the following features are supported: ARP, ICMP, ND and SNMP.
+
+_108_
+This IRAM package includes the following main features:
+NG CAPWAP, Coarse Classification (CC), Independent-Mode (IM), 
 Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
 
@@ -25,14 +38,18 @@ fsl_fman_ucode_p5040_r2.0_106_1_14.bin
 fsl_fman_ucode_p2041_r1.0_106_1_14.bin
 fsl_fman_ucode_p2041_r1.1_106_1_14.bin
 fsl_fman_ucode_p2041_r2.0_106_1_14.bin
-fsl_fman_ucode_t1040_r1.0_106_4_14.bin
-fsl_fman_ucode_t2080_r1.0_106_4_14.bin
 fsl_fman_ucode_p3041_r1.0_106_1_14.bin
 fsl_fman_ucode_p3041_r1.1_106_1_14.bin
 fsl_fman_ucode_p3041_r2.0_106_1_14.bin
 fsl_fman_ucode_t4240_r1.0_106_4_14.bin
 fsl_fman_ucode_t4240_r2.0_106_4_14.bin
+fsl_fman_ucode_t2080_r1.0_106_4_14.bin
+fsl_fman_ucode_t2080_r1.1_106_4_14.bin
+fsl_fman_ucode_t2080_r1.1_108_4_2.bin
+fsl_fman_ucode_t1040_r1.0_106_4_14.bin
+fsl_fman_ucode_t1040_r1.1_106_4_14.bin
 fsl_fman_ucode_t1040_r1.0_107_4_2.bin
+fsl_fman_ucode_t1040_r1.1_107_4_2.bin
 fsl_fman_ucode_t1024_r1.0_106_4_14.bin
 fsl_fman_ucode_t1024_r1.0_107_4_2.bin
 fsl_fman_ucode_t1024_r1.0_108_4_2.bin
