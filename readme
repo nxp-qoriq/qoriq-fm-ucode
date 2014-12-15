@@ -1,5 +1,5 @@
 
-These are the microcode binaries for the Frame Manager hardware block in QorIQ
+These are the microcode families of the Frame Manager hardware block in QorIQ
 products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
@@ -26,34 +26,11 @@ Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
 
 
-fsl_fman_ucode_p4080_r2.0_106_2_14.bin
-fsl_fman_ucode_p4080_r3.0_106_2_14.bin
-fsl_fman_ucode_b4860_r1.0_106_3_14.bin
-fsl_fman_ucode_b4860_r2.0_106_4_14.bin
-fsl_fman_ucode_p5020_r1.0_106_1_14.bin
-fsl_fman_ucode_p5020_r2.0_106_1_14.bin
-fsl_fman_ucode_p1023_r1.1_160_0_18.bin
-fsl_fman_ucode_p5040_r1.0_106_1_14.bin
-fsl_fman_ucode_p5040_r2.0_106_1_14.bin
-fsl_fman_ucode_p2041_r1.0_106_1_14.bin
-fsl_fman_ucode_p2041_r1.1_106_1_14.bin
-fsl_fman_ucode_p2041_r2.0_106_1_14.bin
-fsl_fman_ucode_p3041_r1.0_106_1_14.bin
-fsl_fman_ucode_p3041_r1.1_106_1_14.bin
-fsl_fman_ucode_p3041_r2.0_106_1_14.bin
-fsl_fman_ucode_t4240_r1.0_106_4_14.bin
-fsl_fman_ucode_t4240_r2.0_106_4_14.bin
-fsl_fman_ucode_t2080_r1.0_106_4_14.bin
-fsl_fman_ucode_t2080_r1.1_106_4_14.bin
-fsl_fman_ucode_t2080_r1.1_108_4_2.bin
-fsl_fman_ucode_t1040_r1.0_106_4_14.bin
-fsl_fman_ucode_t1040_r1.1_106_4_14.bin
-fsl_fman_ucode_t1040_r1.0_107_4_2.bin
-fsl_fman_ucode_t1040_r1.1_107_4_2.bin
-fsl_fman_ucode_t1024_r1.0_106_4_14.bin
-fsl_fman_ucode_t1024_r1.0_107_4_2.bin
-fsl_fman_ucode_t1024_r1.0_108_4_2.bin
 
+
+   rev 106.x.15
+Fixed Errata HM2 (FManV3):
+HM on OP when input frame is SG and VSPE=1 may result with frame data corruption.
 
    rev 108.4.2
 This package is IPACC + Next Generation CAPWAP
