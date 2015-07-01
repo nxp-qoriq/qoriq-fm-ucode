@@ -5,74 +5,26 @@ further match specific software versions (Frame Manager Driver -- FMD).
 
 IPACC IRAM Package Alpha Release 106_x_14 
 DSAR IRAM Package Alpha Release 107_x_2
-IPACC + Next Generation CAPWAP  108_x_2
+IPACC + Next Generation CAPWAP  108_x_5
 
 _106_
 This IRAM package includes the following main features:
 Coarse Classification (CC), Independent-Mode (IM),
 Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
+Release Notes: DPAA_IPACC_ReleaseNote.pdf
 
 _107_
 This IRAM package includes the following main features: 
 Custom Classification (CC), Independent-Mode (IM), 
 Host-Commands (HC) and Deep Sleep Auto Response (DSAR). 
 For DSAR the following features are supported: ARP, ICMP, ND and SNMP.
+Release Notes: DPAA_DSAR_ReleaseNote.pdf
 
 _108_
 This IRAM package includes the following main features:
 NG CAPWAP, Coarse Classification (CC), Independent-Mode (IM), 
 Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
-
-
-
-
-   rev 106.x.15
-Fixed Errata HM2 (FManV3):
-HM on OP when input frame is SG and VSPE=1 may result with frame data corruption.
-
-   rev 108.4.2
-This package is IPACC + Next Generation CAPWAP
-
-   rev 107.4.2
-
-The following 4 AR SNMP bugs were fixed in this release (107.4.1 to 107.4.2):
-
-DSAR6 SNMP: Varbind with length field span between 256 bytes blocks cause varbind
-interpreted incorrectly.
-
-DSAR7 SNMP: SNMP: If the community string is larger than the remaining byte length
-next to the community string, community mismatch may occur even the string matches.
-
-DSAR8 SNMP: Community mismatch may occur if the community string is located across
-256 bytes boundary of the frame.
-
-DSAR9 SNMP: Incorrect interpretation on length field if the length is 2-bytes
-(i.e. 256~65535) and located across 256 bytes boundary of the SNMP frame.
-
-
-
-
-    rev 106.x.14:
-    
-    IP short frames with L2 padding should not be encrypted with the padding.
-    Added in IPsec Manipulation Table Descriptor before encryption
-    mechanism to remove the padding.
-    
-    rev 106.x.13:
-    1.) FMan V2 and FMan V3:In case frame came from RMan and it is sRIO type 9 then
-    the FD is of SG format and most likely it is with only one entry; in order to
-    increase performance/latency (especially if frame is directed to the SEC)
-    the firmware converts this one entry SG format frame into single buffer format.
-    2.) FMan V2 only: In case frame came from SEC decryption on FMan V2 device
-    the firmware removes the ESP trailer and updates the FD[Length] accordingly.
-    In addition firmware adjusts the SEC S/G output frame to be compatible to
-    FMan S/G format (valid only for FMan V2 devices after SEC decryption).
-    For FMan V3 devices SEC HW supports ESP trailer removal and enabling
-    storage profile also solves the FMan S/G compatible issues
-    
-    rev 106.x.12:
-    Relevant only to FMan V2: Fixed IPR16- IPR malformed behaviour when there is
-    discard on successfully reassembled frame.
+Relese Notes: DPAA_NG_CAPWAP_ReleaseNote.pdf
 
