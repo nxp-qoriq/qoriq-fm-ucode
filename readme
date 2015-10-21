@@ -3,7 +3,7 @@ These are the microcode families of the Frame Manager hardware block in QorIQ
 products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
-IPACC IRAM Package Alpha Release 106_x_16 
+IPACC IRAM Package Alpha Release 106_x_17 
 DSAR IRAM Package Alpha Release 107_x_2
 IPACC + Next Generation CAPWAP  108_x_5
 
@@ -30,23 +30,23 @@ Relese Notes: DPAA_NG_CAPWAP_ReleaseNote.pdf
 
 List of platforms and their appropriate latest ucode version:
 
-b4860_r2.2	fsl_fman_ucode_b4860_r2.2_106_4_16.bin (*)
+b4860_r2.2	fsl_fman_ucode_b4860_r2.2_106_4_17.bin (*)
 		fsl_fman_ucode_b4860_r2.2_108_4_5.bin
 ls1043_r1.0	fsl_fman_ucode_ls1043_r1.0_108_4_5.bin
 p1023_r1.1	fsl_fman_ucode_p1023_r1.1_160_0_18.bin
-p2041_r2.0	fsl_fman_ucode_p2041_r2.0_106_1_16.bin
-p3041_r2.0	fsl_fman_ucode_p3041_r2.0_106_1_16.bin
-p4080_r3.0	fsl_fman_ucode_p4080_r3.0_106_2_16.bin
-p5020_r2.0	fsl_fman_ucode_p5020_r2.0_106_1_16.bin
-p5040_r2.1	fsl_fman_ucode_p5040_r2.1_106_1_16.bin
-t1024_r1.0	fsl_fman_ucode_t1024_r1.0_106_4_16.bin (*)
+p2041_r2.0	fsl_fman_ucode_p2041_r2.0_106_1_17.bin
+p3041_r2.0	fsl_fman_ucode_p3041_r2.0_106_1_17.bin
+p4080_r3.0	fsl_fman_ucode_p4080_r3.0_106_2_17.bin
+p5020_r2.0	fsl_fman_ucode_p5020_r2.0_106_1_17.bin
+p5040_r2.1	fsl_fman_ucode_p5040_r2.1_106_1_17.bin
+t1024_r1.0	fsl_fman_ucode_t1024_r1.0_106_4_17.bin (*)
 		fsl_fman_ucode_t1024_r1.0_107_4_2.bin
 		fsl_fman_ucode_t1024_r1.0_108_4_5.bin
-t1040_r1.1	fsl_fman_ucode_t1040_r1.1_106_4_16.bin (*)
+t1040_r1.1	fsl_fman_ucode_t1040_r1.1_106_4_17.bin (*)
 		fsl_fman_ucode_t1040_r1.1_107_4_2.bin
-t2080_r1.1	fsl_fman_ucode_t2080_r1.1_106_4_16.bin (*)
+t2080_r1.1	fsl_fman_ucode_t2080_r1.1_106_4_17.bin (*)
 		fsl_fman_ucode_t2080_r1.1_108_4_5.bin
-t4240_r2.0	fsl_fman_ucode_t4240_r2.0_106_4_16.bin (*)
+t4240_r2.0	fsl_fman_ucode_t4240_r2.0_106_4_17.bin (*)
 		fsl_fman_ucode_t4240_r2.0_108_4_5.bin
 
 (*) denotes which is the default version
