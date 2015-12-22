@@ -9,7 +9,7 @@ IPACC + Next Generation CAPWAP  108_x_5
 
 _106_
 This IRAM package includes the following main features:
-Coarse Classification (CC), Independent-Mode (IM),
+Custom Classification (CC), Independent-Mode (IM),
 Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
 Release Notes: DPAA_IPACC_ReleaseNote.pdf
@@ -23,10 +23,17 @@ Release Notes: DPAA_DSAR_ReleaseNote.pdf
 
 _108_
 This IRAM package includes the following main features:
-NG CAPWAP, Coarse Classification (CC), Independent-Mode (IM), 
+NG CAPWAP, Custom Classification (CC), Independent-Mode (IM), 
 Host-Commands (HC), IPv4/6 Fragmentation (IPF),
 IPv4/6 Reassembly (IPR), IPsec and Header Manipulation (HM).
 Relese Notes: DPAA_NG_CAPWAP_ReleaseNote.pdf
+
+
+    CC IM HC IPF IPR HM DSAR CAPWAP
+106 +  +  +  +   +   +  -    -
+107 +  +  +  -   -   -  +    -
+108 +  +  +  +   +   +  -    +
+
 
 List of platforms and their appropriate latest ucode version:
 
