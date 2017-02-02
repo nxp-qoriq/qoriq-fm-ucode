@@ -3,9 +3,19 @@ These are the microcode families of the Frame Manager hardware block in QorIQ
 products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 
+Latest Releases available:
+
 IPACC IRAM Package Alpha Release 106_x_18 
 DSAR IRAM Package Alpha Release 107_x_2
 IPACC + Next Generation CAPWAP  108_x_5
+
+Versioning numbers significance:
+
+First number:
+	Primary Major number: Encodes the major features supported by this release
+	106: IPACC
+	107: DSAR + partial IPACC
+	108: NG CAPWAP + FE + IPACC
 
 _106_
 This IRAM package includes the following main features:
@@ -35,11 +45,31 @@ Relese Notes: DPAA_NG_CAPWAP_ReleaseNote.pdf
 108 +  +  +  +   +   +  -    +
 
 
+Second number: 
+	Secondary Major number: Encodes different HW revisions and specific minor features
+	106.1:  FMANv2 without Software DMA Semaphore
+	106.2:  FMANv2 with Software DMA Semaphore
+	106.3:  FMANv3 Rev.1
+	106.4:  FMANv3 > Rev.1
+
+	107.4:  DSAR 
+
+	108.4:  Full NG CAPWAP (with GRE additions)
+	108.5:  Reduced NG CAPWAP (only for NG CAPWAP demo, without IM)
+
+				
+Third number: 
+	Minor number: incremented when new minor enhancements or significant fixes are introduced
+
+
 List of platforms and their appropriate latest ucode version:
 
 b4860_r2.2	fsl_fman_ucode_b4860_r2.2_106_4_18.bin (*)
 		fsl_fman_ucode_b4860_r2.2_108_4_5.bin
-ls1043_r1.0	fsl_fman_ucode_ls1043_r1.0_108_4_5.bin
+ls1043_r1.1	fsl_fman_ucode_ls1043_r1.1_106_4_18.bin (*)
+		fsl_fman_ucode_ls1043_r1.1_108_4_5.bin
+ls1046_r1.0	fsl_fman_ucode_ls1046_r1.0_106_4_18.bin (*)
+		fsl_fman_ucode_ls1046_r1.0_108_4_5.bin
 p1023_r1.1	fsl_fman_ucode_p1023_r1.1_160_0_18.bin
 p2041_r2.0	fsl_fman_ucode_p2041_r2.0_106_1_18.bin
 p3041_r2.0	fsl_fman_ucode_p3041_r2.0_106_1_18.bin
